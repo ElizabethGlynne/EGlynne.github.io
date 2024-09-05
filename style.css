@@ -14,54 +14,30 @@ body {
 }
 
 /* Main container styling for flexbox */
-.main-container {
+.profile-container {
     display: flex;
-    align-items: flex-start; /* Aligns items at the start of the container */
+    align-items: flex-start;
+    gap: 20px;
     max-width: 1200px;
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-bottom: 20px; /* Adds space between the main container and links section */
-}
-
-/* Profile picture styling */
-.profile-container {
-  display: flex;
-  align-items: center; /* Ensures the image and text are vertically aligned */
-  justify-content: flex-start; /* Aligns content to the left */
-  gap: 20px; /* Adds space between the image and paragraph */
-  flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 /* Profile picture settings */
 .profile-picture img {
-  width: 250px; /* You can adjust this to scale with your design */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional - rounded corners */
-}
-
-/* Profile info (paragraph and text) */
-.profile-info {
-  flex: 1; /* This allows the text section to take up remaining space */
-}
-
-/* Make the image responsive */
-@media (max-width: 768px) {
-  .profile-container {
-    flex-direction: column; /* Stack the image and text vertically on smaller screens */
-    align-items: center; /* Center align on small screens */
-  }
-  .profile-picture img {
-    width: 100%; /* Make the image scale with the container */
-    max-width: 300px; /* Set a max size so it doesn’t get too large */
-  }
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Center content styling */
 .center-content {
-    flex: 1; /* Takes the remaining space in the container */
-    text-align: left; /* Aligns text to the left */
+    flex: 1;
+    text-align: left;
 }
 
 .center-content h1 {
@@ -88,32 +64,31 @@ body {
 
 /* Social Media Bar Styles */
 .socialMediaSection {
-  display: flex;
-  flex-direction: column; /* Force vertical stacking */
-  align-items: flex-start; /* Align the icons to the left */
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .socialNetworkNav {
-  margin: 10px 0; /* Space between each icon */
-  display: block; /* Force each icon to take its own line */
+    margin-bottom: 10px;
 }
 
 .social-icon {
-  width: 74px; /* Adjust the size of icons */
-  height: 74px;
-  transition: transform 0.3s ease; /* Add hover effect */
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 /* Links section styling */
 .links-section {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px; /* Ensures alignment with the main container width */
+    max-width: 1200px;
     width: 100%;
     padding: 20px;
     background-color: white;
@@ -127,91 +102,21 @@ body {
     text-align: center;
 }
 
-.link-item a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .link-item img {
-    width: 100%;
-    height: auto;
     max-width: 200px;
-    border-radius: 8px;
-    margin-bottom: 0.5em;
-}
-
-.link-item h4 {
-    font-size: 1.2em;
-    color: #444;
-}
-
-/* General body font settings */
-body {
-    font-family: Arial, sans-serif; /* Use a clean, legible font */
-    font-size: 18px; /* Increase font size for readability */
-    line-height: 1.7; /* Increase line height for better spacing between lines */
-    color: #333; /* Use a dark gray color for softer contrast than pure black */
-}
-
-/* Font for Headers */
-h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif; /* Use a modern font for headers */
-    font-weight: 700; /* Make the headers bold */
-    color: #222; /* Darker color for headers */
-}
-
-/* Paragraphs */
-p {
-    font-weight: 400; /* Set the font to regular weight */
-    color: #444; /* Slightly softer color for paragraph text */
-    margin-bottom: 15px; /* Add space between paragraphs */
-}
-
-/* Research/teaching/outreach section headers */
-h3 {
-    font-weight: 600; /* Semi-bold for subheadings */
-}
-
-/* Basic section formatting */
-.section2 {
-    margin: 40px;
-}
-
-.sectionTitle {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.sectionTitleRule, .sectionTitleRule2 {
-    border: 1px solid #ccc;
-    margin: 10px auto;
-    width: 80%;
-}
-
-.section2Content {
-    margin: 20px 0;
-    font-size: 16px;
-}
-
-/* Publications styling */
-.publication-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between publications */
-}
-
-.publication {
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-/* Responsive adjustments */
+/* Responsive layout for small screens */
 @media (max-width: 768px) {
-    .section2Content {
-        font-size: 14px;
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialMediaSection {
+        flex-direction: row; /* Make social media icons horizontal on smaller screens */
+        justify-content: center;
     }
 }
