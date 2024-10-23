@@ -3,89 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Glynne | Research</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Research | Elizabeth Glynne</title>
+    
+    <!-- Link to the shared CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Ensure the path is correct -->
 </head>
 <body>
+
     <!-- Main Container -->
     <div class="container">
+        
         <!-- Research Section -->
         <section class="section2">
-          <h2 class="sectionTitle">About My Research</h2>
-          <hr class="sectionTitleRule">
-          <hr class="sectionTitleRule2">
-          
-          <div class="section2Content">
-            <p>
-              I am currently a PhD candidate in Evolutionary Biology at Iowa State University, working under the guidance of 
-              <a href="https://faculty.sites.iastate.edu/dcadams/" target="_blank">Dr. Dean C. Adams</a>. My research focuses on understanding the morphological consequences of evolutionary change, specifically in geckos. I leverage advanced techniques such as geometric morphometrics, 3D modeling (photogrammetry), and phylogenetic comparative methods to explore these complex evolutionary processes.
-            </p>
-            
-            <p>
-              My research has explored various themes, including the evolution of novel traits, the evolution of sexual size dimorphism among closely related groups, and how miniaturization, or the evolution of extremely small body sizes, influences morphological integration. Through these studies, I aim to uncover how evolutionary processes shape morphological diversity and the functional roles these traits play.
-            </p>
-            
-            <p>
-              In addition to my doctoral work, I am deeply involved in expanding the application of 3D photogrammetry and computational methods in evolutionary biology. I strive to make these tools more accessible and effective for both research and education, bridging the gap between cutting-edge technology and practical application. My work involves developing pipelines that utilize freeware and open-source platforms, ensuring that these advanced methodologies are available to researchers and educators worldwide, regardless of their resources.
-            </p>
-            
-            <p>
-              My commitment extends beyond advancing our understanding of evolution; it also focuses on refining and democratizing the tools and techniques used in our field. By improving methodologies, I aim to enhance our ability to explore and visualize biological diversity in greater detail—from macroevolutionary patterns to micro-scale morphological changes—ultimately contributing to a more comprehensive and inclusive understanding of the natural world.
-            </p>
-          </div>
+            <h2 class="sectionTitle">About My Research</h2>
+            <div class="sectionContent">
+				<p>I am currently a PhD candidate in Ecology and Evolutionary Biology at Iowa State University, working under the guidance of 
+					<a href="https://faculty.sites.iastate.edu/dcadams/" target="_blank">Dr. Dean C. Adams</a>. My research focuses on understanding the broad evolutionary processes that shape phenotypic diversity. My work explores key evolutionary concepts such as 
+					<strong>sexual dimorphism</strong>, <strong>miniaturization</strong>, and <strong>morphological integration</strong>, aiming to uncover how these processes influence trait evolution and ecological specialization across diverse taxa.
+				</p>
+				<p>Using advanced techniques such as <strong>geometric morphometrics</strong>, <strong>3D modeling (photogrammetry)</strong>, and <strong>phylogenetic comparative methods</strong>, I investigate the interplay between form and function in evolutionary biology. I focus on how evolutionary pressures, such as size reduction or changes in ecological roles, drive the integration of morphological traits and impact broader evolutionary patterns.</p>
+				<p>Additionally, I am committed to making these computational tools and methodologies accessible to researchers and educators through open-source platforms, promoting a more inclusive and innovative approach to studying evolutionary biology.</p>
+			</div>
         </section>
 
-         <!-- Publications Section -->
-        <section class="section2">
-          <h2 class="sectionTitle">Publications</h2>
-          <hr class="sectionTitleRule">
-          <hr class="sectionTitleRule2">
-          
-          <!-- Publication List -->
-          <div class="publication-list">
-            <!-- Publication 1 -->
-            <article class="section2Content publication">
-              <h2 class="sectionContentTitle">The effect of miniaturization on the evolution of sexual size dimorphism in geckos</h2>
-              <h3 class="sectionContentSubTitle">E Glynne, DC Adams - Evolution, 2024</h3>
-              <p class="sectionContent">
-                This study explores how miniaturization affects sexual size dimorphism in geckos, highlighting significant changes in morphology, physiology, and behavior.
-              </p>
-            </article>
+        <!-- Publications Section -->
+        <section class="publications-section">
+            <div class="publication-box">
+                <h3>Most Recent Publication</h3>
+                <div id="most-recent-publication"></div>
+            </div>
             
-            <!-- Publication 2 -->
-            <article class="section2Content publication">
-              <h2 class="sectionContentTitle">Surface sculpturing in the skull of gecko lizards (Squamata: Gekkota)</h2>
-              <h3 class="sectionContentSubTitle">E Glynne, JD Daza, AM Bauer - Biological Journal of the …, 2020</h3>
-              <p class="sectionContent">
-                This research systematically characterizes the skull sculpturing in geckos, challenging previous notions that gecko skulls are uniformly smooth.
-              </p>
-            </article>
-    
-            <!-- Publication 3 -->
-            <article class="section2Content publication">
-              <h2 class="sectionContentTitle">Interspecific allometry for sexual shape dimorphism: Macroevolution of multivariate sexual phenotypes with application to Rensch's rule</h2>
-              <h3 class="sectionContentSubTitle">DC Adams, E Glynne, A Kaliontzopoulou - Evolution, 2020</h3>
-              <p class="sectionContent">
-                This paper examines allometric trends in sexual dimorphism relative to body size across species, contributing to understanding the macroevolutionary patterns of sexual phenotypes.
-              </p>
-            </article>
-    
-            <!-- Publication 4 -->
-            <article class="section2Content publication">
-              <h2 class="sectionContentTitle">The tiny skull of the Peruvian gecko Pseudogonatodes barbouri (Gekkota: Sphaerodactylidae) obtained via a divide-and-conquer approach to morphological data</h2>
-              <h3 class="sectionContentSubTitle">…, Y Bermudez, GE Clark, JD Daza, E Glynne… - South American Journal …, 2018</h3>
-              <p class="sectionContent">
-                This study provides detailed morphological data on the tiny skull of the Peruvian gecko, Pseudogonatodes barbouri, one of the smallest reptiles in South America.
-              </p>
-            </article>
-          </div>
+            <div class="publication-box">
+                <h3>Most Cited Publication</h3>
+                <div id="most-cited-publication"></div>
+            </div>
         </section>
+
     </div>
+
+    <!-- Link to JavaScript file for publications -->
+    <script src="Publications.js"></script> <!-- Ensure this path is correct -->
+
+	<div class="link-item">
+		<a href="index.html" class="back-button">Back to Main</a>
+	</div>
+
 </body>
-		<body>
-	 <div class="link-item">
-                <a href="index.html">
-                <img src="AboutPageAssets/images/bitmoji_point_L_back.png" alt="Back to Main">
-            </a>
-        </div></body>
 </html>

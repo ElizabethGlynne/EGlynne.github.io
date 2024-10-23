@@ -1,122 +1,184 @@
-/* General Reset */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Main container styling for flexbox */
-.profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1200px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-/* Profile picture settings */
-.profile-picture img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Center content styling */
-.center-content {
-    flex: 1;
-    text-align: left;
-}
-
-.center-content h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-.center-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.3em;
-    color: #555;
-}
-
-.center-content h3 {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    color: #777;
-}
-
-.center-content p {
-    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Social Media Bar Styles */
-.socialMediaSection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.socialNetworkNav {
-    margin-bottom: 10px;
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-}
-
-/* Links section styling */
-.links-section {
-    display: flex;
-    justify-content: space-between;
+/* Main container for profile, text, and social icons */
+.profile-container {
     max-width: 1200px;
-    width: 100%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.link-item {
-    flex: 1;
-    margin: 0 10px;
     text-align: center;
 }
 
+.profile-picture img {
+    border-radius: 8px;
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.center-content h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.center-content h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.center-content h3 {
+    font-size: 1.3rem;
+    color: #2980b9;
+}
+
+.center-content p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.center-content a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Social Media Icons */
+.socialMediaSection {
+    margin-top: 20px;
+}
+
+.socialMediaSection a {
+    margin: 0 10px;
+}
+
+.socialMediaSection img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Links section for Research, Teaching, Outreach */
+.links-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Individual link items */
+.link-item {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .link-item img {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-/* Responsive layout for small screens */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Link text under the images */
+.link-item h2 a {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    text-decoration: none;
+}
 
-    .socialMediaSection {
-        flex-direction: row; /* Make social media icons horizontal on smaller screens */
-        justify-content: center;
-    }
+.link-item h2 a:hover {
+    color: #2980b9;
+}
+
+/* Publication section for the Research Page */
+.publications-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.publication-box {
+    width: 45%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.publication-box h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.publication-box a {
+    font-size: 1.1rem;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.publication-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Resource section for the Teaching Page */
+.resource-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.resource-box {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resource-box h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.resource-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #1a1a1a;
 }
