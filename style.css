@@ -8,39 +8,71 @@ body {
     color: #333;
 }
 
-/* Profile container for image and text */
-.profile-container {
+/* Profile section for image and top-section */
+.profile-section {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start; /* Aligns the profile picture and text side by side */
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Profile image styling */
+/* Profile picture styling */
 .profile-picture img {
     max-width: 200px;
     border-radius: 8px;
-    display: block;
 }
 
-/* Center content text */
-.center-content {
-    max-width: 600px;
-    flex: 1;
+/* Top section for name, title, and social icons */
+.top-section {
+    flex: 1; /* Allows the top section to take up the remaining space */
 }
 
-/* Social Media Icons */
+.top-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.top-section h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+/* Social Media Section */
 .socialMediaSection {
+    display: flex;
+    gap: 10px; /* Adds space between icons */
     margin-top: 10px;
 }
 
 .social-icon {
     width: 40px;
     height: auto;
-    margin-right: 10px;
+}
+
+/* CV Link */
+.top-section p a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.top-section p a:hover {
+    color: #1a7ca7;
+}
+
+
+/* New Summary Box for description paragraph */
+.summary-box {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Links Section (Research, Teaching, Outreach) */
@@ -48,7 +80,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-    gap: 20px;
 }
 
 .link-item {
@@ -57,9 +88,8 @@ body {
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
     max-width: 250px;
-    margin: 0 10px;
+    flex-grow: 1;
 }
 
 .link-item img {
@@ -78,26 +108,7 @@ body {
     color: #2980b9;
 }
 
-/* Back button styling */
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2c3e50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.back-button:hover {
-    background-color: #1a1a1a;
-}
-
-/* ------- CSS for Outreach Page (Event Materials) ------- */
-
-/* Resource section for the Outreach Page */
+/* Resource Boxes for Outreach Page */
 .resource-container {
     display: flex;
     justify-content: space-between;
@@ -126,22 +137,7 @@ body {
     color: #666;
 }
 
-/* Stack the resource boxes vertically on mobile */
-@media (max-width: 768px) {
-    .resource-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .resource-box {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-}
-
-/* ------- CSS for Research Page (Publications) ------- */
-
-/* Publications section for the Research Page */
+/* Publication Boxes for Research Page */
 .publications-section {
     display: flex;
     justify-content: space-between;
@@ -149,7 +145,7 @@ body {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    gap: 20px; /* Add space between the publication boxes */
+    gap: 20px;
 }
 
 .publication-box {
@@ -159,6 +155,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .publication-box h3 {
@@ -172,24 +169,26 @@ body {
     color: #666;
 }
 
-/* Stack the publication boxes vertically on smaller screens */
-@media (max-width: 768px) {
-    .publications-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .publication-box {
-        width: 90%;  /* Full width for mobile */
-        margin-bottom: 20px;
-    }
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
 }
 
-/* ------- Mobile Adjustments (General) ------- */
+.back-button:hover {
+    background-color: #1a1a1a;
+}
 
-/* Mobile adjustments for profile section */
+/* Responsive Styling for Mobile Devices */
 @media (max-width: 768px) {
-    .profile-container {
+    .profile-section {
         flex-direction: column;
         text-align: center;
     }
@@ -198,18 +197,37 @@ body {
         max-width: 150px;
     }
 
-    .center-content {
+    .summary-box {
         margin-top: 20px;
     }
 
     .links-section {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
 
     .link-item {
         max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .resource-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .publications-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publication-box {
+        width: 90%;
         margin-bottom: 20px;
     }
 }
