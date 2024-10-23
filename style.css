@@ -212,3 +212,52 @@ body {
 .back-button:hover {
     background-color: #1a1a1a;
 }
+
+
+/* ----------- Mobile-Friendly Section Below ---------- */
+/* Responsive styling for smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    /* Profile section adjustments for smaller screens */
+    .profile-container {
+        flex-direction: column; /* Stack the profile picture and content vertically */
+        align-items: center; /* Center-align profile picture and text */
+        text-align: center; /* Center the text on mobile */
+        gap: 15px; /* Reduced the gap between items */
+        padding: 20px 0; /* Add padding to ensure content isn’t cramped */
+    }
+
+    .profile-picture {
+        margin-bottom: 10px; /* Add space between profile picture and text */
+    }
+
+    .profile-picture img {
+        max-width: 150px; /* Resize profile picture for smaller screens */
+    }
+
+    .center-content {
+        max-width: 90%; /* Make text take full width on smaller screens */
+        text-align: center;
+    }
+
+    /* Ensure social icons stack and center properly */
+    .socialMediaSection {
+        justify-content: center;
+        margin-top: 15px; /* Add a bit more space above the icons */
+    }
+
+    .social-icon {
+        width: 30px; /* Slightly reduce social icon size for mobile */
+    }
+
+    /* Stack the research, teaching, outreach boxes vertically on mobile */
+    .links-section {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .link-item {
+        max-width: 90%; /* Make boxes full-width on mobile */
+        margin-bottom: 20px; /* Add spacing between each box */
+    }
+}
