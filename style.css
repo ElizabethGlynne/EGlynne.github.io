@@ -10,17 +10,21 @@ body {
 
 /* Main container for profile, text, and social icons */
 .profile-container {
+    display: flex;
+    justify-content: space-between; /* Spread the image and content */
+    align-items: center; /* Align them vertically in the middle */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-.profile-picture img {
-    border-radius: 8px;
-    width: 200px; /* Adjust as needed */
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.profile-picture {
+    flex: 0 0 200px; /* Control the width of the image */
+    margin-right: 20px;
+}
+
+.center-content {
+    flex: 1; /* Make the text fill the remaining space */
 }
 
 .center-content h1 {
@@ -65,24 +69,22 @@ body {
 /* Links section for Research, Teaching, Outreach */
 .links-section {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-top: 40px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
 }
 
-/* Individual link items */
 .link-item {
     flex: 1;
-    max-width: 250px;
+    max-width: 300px; /* Set a maximum width */
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure the height is consistent */
 }
 
 .link-item img {
