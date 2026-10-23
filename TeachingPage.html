@@ -11,78 +11,111 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Metadata for Teaching Page -->
-    <meta name="description" content="Teaching philosophy, biology education, scientific computing, and curriculum development of Elizabeth Glynne Boenigk, Ph.D., Instructor of Biology at Des Moines Area Community College.">
-    <meta name="keywords" content="Elizabeth Glynne Boenigk, Biology Education, Evolutionary Biology, Scientific Computing, Scientific Inquiry, Teaching Philosophy, Curriculum Development, Active Learning, Biology Teaching">
+    <meta name="description" content="Teaching philosophy, biology education, scientific computing, interactive learning, and curriculum development of Elizabeth Glynne Boenigk, Ph.D., Instructor of Biology at DMACC.">
+    <meta name="keywords" content="Elizabeth Glynne Boenigk, Biology Education, Scientific Computing, Interactive Biology, Teaching Philosophy, Curriculum Development, Evolutionary Biology">
     <meta name="author" content="Elizabeth Glynne Boenigk">
     <title>Teaching | Elizabeth Glynne Boenigk</title>
-    <!-- Shared stylesheet: same file used by the rest of the website -->
     <link rel="stylesheet" href="style.css">
+    <!-- Tile styles are scoped to this page and can be moved into style.css later. -->
+    <style>
+      .teaching-page, .teaching-page * { box-sizing: border-box; }
+      .teaching-page .teaching-dashboard { width: min(100% - 40px, 1040px); margin: 34px auto 44px; }
+      .teaching-page .teaching-dashboard h1 { margin: 0 0 10px; font-size: clamp(1.75rem, 3vw, 2.35rem); color: #2c3e50; }
+      .teaching-page .teaching-intro { max-width: 850px; font-size: 1.08rem; line-height: 1.65; margin: 0 0 26px; }
+      .teaching-page .teaching-dashboard h2 { color: #2c3e50; font-size: 1.25rem; margin: 0 0 14px; }
+      .teaching-page .tile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 0 0 26px; }
+      .teaching-page .tile { min-width: 0; background: #fff; border: 1px solid #dedede; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,.08); padding: 23px; }
+      .teaching-page .tile h3 { margin: 0 0 10px; font-size: 1.15rem; color: #2c3e50; }
+      .teaching-page .tile p { margin: 0; line-height: 1.65; color: #4d4d4d; }
+      .teaching-page .resource-tile { border-top: 4px solid #55713D; }
+      .teaching-page .resource-tile:nth-child(2) { border-top-color: #B76B32; }
+      .teaching-page .resource-tile:nth-child(3) { border-top-color: #19394F; }
+      .teaching-page .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+      .teaching-page .info-tile { padding: 24px; }
+      .teaching-page .info-tile.wide { grid-column: 1 / -1; }
+      .teaching-page .info-tile p + p { margin-top: 12px; }
+      .teaching-page .info-tile h4 { margin: 17px 0 5px; color: #2c3e50; }
+      .teaching-page .info-tile h4:first-of-type { margin-top: 4px; }
+      .teaching-page details { margin-top: 15px; }
+      .teaching-page summary { cursor: pointer; font-weight: bold; color: #2c3e50; padding: 7px 0; }
+      .teaching-page summary:focus-visible, .teaching-page a:focus-visible { outline: 3px solid #B18A27; outline-offset: 3px; }
+      .teaching-page .back-button-container { margin: 28px 0 0; }
+      @media (max-width: 800px) {
+        .teaching-page .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .teaching-page .info-grid { grid-template-columns: 1fr; }
+        .teaching-page .info-tile.wide { grid-column: auto; }
+      }
+      @media (max-width: 560px) {
+        .teaching-page .teaching-dashboard { width: calc(100% - 32px); margin-top: 22px; }
+        .teaching-page .tile-grid { grid-template-columns: 1fr; }
+        .teaching-page .tile { padding: 19px; }
+      }
+    </style>
 </head>
 <body class="teaching-page">
+  <main class="teaching-dashboard">
+    <header>
+      <h1>Teaching &amp; Learning</h1>
+      <p class="teaching-intro">Helping students investigate how life works, persists, and changes through scientific reasoning, evidence, and exploration.</p>
+    </header>
 
-    <!-- 1. Teaching Philosophy -->
-    <section class="section2" aria-labelledby="teaching-philosophy">
-        <h2 class="sectionTitle" id="teaching-philosophy">Teaching Philosophy</h2>
-        <div class="sectionContent">
-            <p>I approach biology education as an opportunity to help students understand the living world as a collection of interconnected, dynamic systems. Rather than emphasizing the memorization of isolated facts, I encourage students to investigate how biological systems work, how they persist, and how they change across time and levels of organization.</p>
-            <p>My teaching is grounded in evolutionary thinking, scientific inquiry, and evidence-based reasoning. I emphasize the relationships among biological structures, processes, and patterns, helping students build explanations that connect molecular and cellular mechanisms to organisms, populations, and evolutionary change.</p>
-            <p>I believe meaningful scientific learning requires opportunities to question, predict, observe, analyze, and revise one's understanding. Through laboratory investigations, collaborative problem-solving, computational models, visual representations, and authentic scientific data, I aim to make abstract concepts tangible and encourage students to participate actively in scientific discovery.</p>
-            <p>I recognize that students enter science classrooms with different experiences, strengths, and needs. My goal is to maintain meaningful scientific expectations while providing multiple pathways for students to engage with concepts, develop confidence, and demonstrate their understanding.</p>
-            <p>Ultimately, I want students to leave my courses not only with a stronger understanding of biology, but with the ability to think scientifically, evaluate evidence, recognize connections, and approach unfamiliar questions with curiosity.</p>
-        </div>
+    <section aria-label="Educational resources and projects">
+      <div class="tile-grid">
+        <article class="tile resource-tile">
+          <h3>Biology Education</h3>
+          <p>Concepts, resources, and learning activities that connect biological mechanisms to broader patterns in living systems.</p>
+        </article>
+        <article class="tile resource-tile">
+          <h3>Scientific Computing</h3>
+          <p>R workflows, computational models, data analysis, and reproducible approaches to scientific questions.</p>
+        </article>
+        <article class="tile resource-tile">
+          <h3>Interactive Explorations</h3>
+          <p>Biology games, population simulations, virtual experiments, and digital anatomy experiences.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- 2. Teaching Areas and Expertise -->
-    <section class="section2" aria-labelledby="teaching-areas">
-        <h2 class="sectionTitle" id="teaching-areas">Teaching Areas &amp; Expertise</h2>
-        <div class="sectionContent">
-            <h3>Biological Sciences</h3>
-            <p>Introductory biology, evolutionary biology, ecology, organismal biology, zoology, herpetology, comparative anatomy and morphology, and genetics.</p>
-            <h3>Scientific Methods &amp; Computing</h3>
-            <p>Scientific inquiry, quantitative reasoning, data visualization, R programming, computational modeling, geometric morphometrics, and digital anatomy.</p>
-            <h3>Biology Education &amp; Pedagogy</h3>
-            <p>Conceptual learning, active learning, inquiry-based laboratory instruction, inclusive teaching, curriculum development, scientific literacy, and evidence-aligned assessment.</p>
-        </div>
-    </section>
+    <div class="info-grid">
+      <section class="tile info-tile" aria-labelledby="philosophy-title">
+        <h2 id="philosophy-title">Teaching Philosophy</h2>
+        <p>I approach biology education as an opportunity to help students understand the living world as a collection of interconnected, dynamic systems. Rather than emphasizing memorization of isolated facts, I encourage students to investigate how biological systems work, persist, and change across time and levels of organization.</p>
+        <details>
+          <summary>Read my full teaching philosophy</summary>
+          <p>My teaching is grounded in evolutionary thinking, scientific inquiry, and evidence-based reasoning. I emphasize relationships among biological structures, processes, and patterns, helping students connect molecular and cellular mechanisms to organisms, populations, and evolutionary change.</p>
+          <p>I believe meaningful scientific learning requires opportunities to question, predict, observe, analyze, and revise one's understanding. Laboratory investigations, collaborative problem-solving, computational models, visual representations, and authentic scientific data help make abstract concepts tangible.</p>
+          <p>I recognize that students enter science classrooms with different experiences, strengths, and needs. My goal is to maintain meaningful scientific expectations while providing multiple pathways for students to engage, develop confidence, and demonstrate understanding.</p>
+          <p>Ultimately, I want students to leave my courses able to think scientifically, evaluate evidence, recognize connections, and approach unfamiliar questions with curiosity.</p>
+        </details>
+      </section>
 
-    <!-- 3. Courses and Curriculum -->
-    <section class="section2" aria-labelledby="courses-curriculum">
-        <h2 class="sectionTitle" id="courses-curriculum">Courses &amp; Curriculum</h2>
-        <div class="sectionContent">
-            <p>I currently teach <strong>BIO 112</strong> at <strong>Des Moines Area Community College (DMACC)</strong>. I organize the course around a central question: <em>How does life work, persist, and change?</em></p>
-            <p>Across the course, students connect foundational biological ideas to cells and energy, continuity and inheritance, molecular biology, and evolution. Laboratory investigations, model-building, authentic data, and practice explaining evidence help students connect processes across levels of biological organization.</p>
-            <p>As I develop additional courses and learning experiences, I aim to maintain clear objectives, meaningful scientific expectations, opportunities for practice and feedback, and assessments aligned with what students should be able to explain and apply.</p>
-            <p>Current assignments, assessments, grades, and course-specific announcements for enrolled students remain available through DMACC's official learning systems.</p>
-        </div>
-    </section>
+      <section class="tile info-tile" aria-labelledby="courses-title">
+        <h2 id="courses-title">Courses &amp; Curriculum</h2>
+        <p>I currently teach <strong>BIO 112</strong> at <strong>Des Moines Area Community College (DMACC)</strong>, organized around a central question: <em>How does life work, persist, and change?</em></p>
+        <details>
+          <summary>Read about my curriculum approach</summary>
+          <p>Students connect foundational biological ideas to cells and energy, continuity and inheritance, molecular biology, and evolution. Laboratory investigations, model-building, authentic data, and evidence-based explanations connect processes across levels of organization.</p>
+          <p>As I develop additional courses, I aim to maintain clear objectives, meaningful expectations, opportunities for practice and feedback, and assessments aligned with what students should be able to explain and apply.</p>
+          <p>Assignments, assessments, grades, and course-specific announcements for enrolled students remain in DMACC's official learning systems.</p>
+        </details>
+      </section>
 
-    <!-- 4. Educational Resources and Projects -->
-    <section class="section2" aria-labelledby="educational-projects">
-        <h2 class="sectionTitle" id="educational-projects">Educational Resources &amp; Projects</h2>
-        <div class="sectionContent">
-            <p>These areas describe the educational materials and tools I am developing. As projects become ready to share publicly, they can be linked here.</p>
-        </div>
-    </section>
-
-    <!-- Existing responsive three-card resource layout -->
-    <section class="resource-container" aria-label="Educational resource categories">
-        <div class="resource-box">
-            <h3>Biology Education</h3>
-            <p>Educational resources, conceptual explanations, and activities connecting biological mechanisms to broader patterns in living systems.</p>
-        </div>
-        <div class="resource-box">
-            <h3>Scientific Computing</h3>
-            <p>R workflows, computational models, data analysis, and reproducible approaches to investigating scientific questions.</p>
-        </div>
-        <div class="resource-box">
-            <h3>Interactive Explorations</h3>
-            <p>Interactive simulations, biology games, virtual experiments, and digital anatomy experiences for exploring living systems.</p>
-        </div>
-    </section>
-
-    <div class="back-button-container" style="max-width:1000px; margin:20px auto 40px; padding:0 20px;">
-        <a href="index.html" class="back-button">Back to Main</a>
+      <section class="tile info-tile wide" aria-labelledby="expertise-title">
+        <h2 id="expertise-title">Teaching Areas &amp; Expertise</h2>
+        <p><strong>Biological sciences</strong> · <strong>Scientific methods &amp; computing</strong> · <strong>Biology education &amp; pedagogy</strong></p>
+        <details>
+          <summary>Explore areas and interests</summary>
+          <h4>Biological Sciences</h4>
+          <p>Introductory biology, evolutionary biology, ecology, organismal biology, zoology, herpetology, comparative anatomy and morphology, and genetics.</p>
+          <h4>Scientific Methods &amp; Computing</h4>
+          <p>Scientific inquiry, quantitative reasoning, data visualization, R programming, computational modeling, geometric morphometrics, and digital anatomy.</p>
+          <h4>Biology Education &amp; Pedagogy</h4>
+          <p>Conceptual learning, active learning, inquiry-based laboratory instruction, inclusive teaching, curriculum development, scientific literacy, and evidence-aligned assessment.</p>
+        </details>
+      </section>
     </div>
+
+    <div class="back-button-container"><a href="index.html" class="back-button">Back to Main</a></div>
+  </main>
 </body>
 </html>
