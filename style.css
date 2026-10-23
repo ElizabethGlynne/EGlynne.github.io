@@ -325,3 +325,74 @@ body {
         flex: none;
     }
 }
+
+
+/* =========================================
+   Research Page: Responsive Content Layout
+   ========================================= */
+
+.research-page,
+.research-page *,
+.research-page *::before,
+.research-page *::after {
+    box-sizing: border-box;
+}
+
+/* Main research content container */
+.research-page .section2 {
+    width: min(100% - 40px, 1000px);
+    margin: 30px auto;
+}
+
+/* Comfortable reading width */
+.research-page .sectionContent,
+.research-page .section2Content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Preserve the original two publication cards */
+.research-page .publications-section {
+    width: min(100% - 40px, 1040px);
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Equal-width publication cards */
+.research-page .publication-box {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+}
+
+/* Center the Back to Main button within the page layout */
+.research-page .back-button-container {
+    width: min(100% - 40px, 1000px);
+    margin: 20px auto 40px;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 768px) {
+    .research-page .section2 {
+        width: calc(100% - 32px);
+        margin: 20px auto;
+    }
+
+    .research-page .publications-section {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .research-page .publication-box {
+        width: 100%;
+        flex: none;
+    }
+
+    .research-page .back-button-container {
+        width: calc(100% - 32px);
+    }
+}
