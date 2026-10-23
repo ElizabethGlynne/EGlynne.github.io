@@ -1,68 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head><br>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7CKYTKCX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7CKYTKCX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9Z7CKYTKCX');
+    </script>
 
-  gtag('config', 'G-9Z7CKYTKCX');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	   
-	<!-- SEO Metadata for Research Page -->
-    <meta name="description" content="Elizabeth Glynne's research focuses on evolutionary biology, phenotypic evolution, sexual size dimorphism, and morphological integration using techniques like geometric morphometrics and phylogenetic comparative methods.">
-    <meta name="keywords" content="Evolutionary Biology, Phenotypic Evolution, Sexual Size Dimorphism, Morphological Integration, Geometric Morphometrics, Phylogenetic Comparative Methods, Trait Evolution">
-    
-	<title>Research | Elizabeth Glynne</title>
-    
-    <!-- Link to the shared CSS file -->
-    <link rel="stylesheet" href="style.css"> <!-- Ensure the path is correct -->
-</head>
-<body>
 
+    <!-- SEO Metadata for Research Page -->
+    <meta name="description" content="Elizabeth Glynne Boenigk is a conceptual evolutionary biologist studying phenotypic evolution, sexual size dimorphism, miniaturization, and morphological integration using geometric morphometrics and phylogenetic comparative methods.">
+    <meta name="keywords" content="Elizabeth Glynne Boenigk, Conceptual Evolutionary Biologist, Evolutionary Biology, Phenotypic Evolution, Sexual Size Dimorphism, Miniaturization, Morphological Integration, Geometric Morphometrics, Phylogenetic Comparative Methods, Trait Evolution, Comparative Anatomy, Scientific Computing, Digital Anatomy">
+    <meta name="author" content="Elizabeth Glynne Boenigk">
+
+    <title>Research | Elizabeth Glynne Boenigk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="research-page">
     <!-- Main Container -->
     <div class="container">
-        
         <!-- Research Section -->
         <section class="section2">
             <h2 class="sectionTitle">About My Research</h2>
             <div class="sectionContent">
-				<p>I am currently a PhD candidate in Ecology and Evolutionary Biology at Iowa State University, working under the guidance of 
-					<a href="https://faculty.sites.iastate.edu/dcadams/" target="_blank">Dr. Dean C. Adams</a>. My research focuses on understanding the broad evolutionary processes that shape phenotypic diversity. My work explores key evolutionary concepts such as 
-					<strong>sexual dimorphism</strong>, <strong>miniaturization</strong>, and <strong>morphological integration</strong>, aiming to uncover how these processes influence trait evolution and ecological specialization across diverse taxa.
-				</p>
-				<p>Using advanced techniques such as <strong>geometric morphometrics</strong>, <strong>3D modeling (photogrammetry)</strong>, and <strong>phylogenetic comparative methods</strong>, I investigate the interplay between form and function in evolutionary biology. I focus on how evolutionary pressures, such as size reduction or changes in ecological roles, drive the integration of morphological traits and impact broader evolutionary patterns.</p>
-				<p>Additionally, I am committed to making these computational tools and methodologies accessible to researchers and educators through open-source platforms, promoting a more inclusive and innovative approach to studying evolutionary biology.</p>
-			</div>
+                <p>I am a conceptual evolutionary biologist interested in understanding the evolutionary and ecological processes that shape phenotypic diversity. I earned my Ph.D. in Ecology and Evolutionary Biology at Iowa State University, where I worked with <a href="https://faculty.sites.iastate.edu/dcadams/" target="_blank" rel="noopener noreferrer">Dr. Dean C. Adams</a>. My research examines how changes in body size, <strong>sexual dimorphism</strong>, and <strong>morphological integration</strong> contribute to broader patterns of morphological evolution, particularly among vertebrates.</p>
+
+                <p>My doctoral research investigated the evolutionary consequences of <strong>miniaturization</strong> and variation in <strong>sexual size dimorphism</strong>. Using <strong>geometric morphometrics</strong>, <strong>phylogenetic comparative methods</strong>, and quantitative analyses of morphological variation, I examine how evolutionary patterns emerge across species and how relationships among morphological traits may change through evolutionary time.</p>
+
+                <p>Beyond these research questions, I am interested in the intersection of evolutionary biology, computational methods, and digital anatomy. Three-dimensional imaging, <strong>CT scanning</strong>, <strong>photogrammetry</strong>, and accessible computational tools offer opportunities to investigate biological form while expanding how students and researchers interact with anatomical and evolutionary data.</p>
+
+                <p>My broader goal is to connect rigorous evolutionary research with scientific education. I am committed to making biological concepts, quantitative approaches, and research methodologies more accessible through open-source tools, interactive learning experiences, and inclusive science education.</p>
+            </div>
         </section>
 
-        <!-- Publications Section -->
-        <section class="publications-section">
+        <!-- Original two-card publications layout; mobile stacking is controlled by style.css -->
+        <section class="publications-section" aria-label="Highlighted publications">
             <div class="publication-box">
                 <h3>Most Recent Publication</h3>
                 <div id="most-recent-publication"></div>
             </div>
-            
+
             <div class="publication-box">
                 <h3>Most Cited Publication</h3>
                 <div id="most-cited-publication"></div>
             </div>
         </section>
-
     </div>
 
-    <!-- Link to JavaScript file for publications -->
-    <script src="Publications.js"></script> <!-- Ensure this path is correct -->
+    <!-- Existing publication script -->
+    <script src="Publications.js"></script>
 
-    <!-- Back Button to return to the index page -->
+    <!-- Back to homepage -->
     <div class="back-button-container">
         <a href="index.html" class="back-button">Back to Main</a>
     </div>
-
 </body>
 </html>
