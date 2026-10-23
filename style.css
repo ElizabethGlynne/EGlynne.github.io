@@ -396,3 +396,75 @@ body {
         width: calc(100% - 32px);
     }
 }
+
+
+
+/* =========================================
+   Outreach Page: Responsive Content Layout
+   ========================================= */
+
+.outreach-page,
+.outreach-page *,
+.outreach-page *::before,
+.outreach-page *::after {
+    box-sizing: border-box;
+}
+
+/* Main outreach content container */
+.outreach-page .section2 {
+    width: min(100% - 40px, 1000px);
+    margin: 30px auto;
+}
+
+/* Comfortable reading width */
+.outreach-page .sectionContent,
+.outreach-page .section2Content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Preserve the original three outreach resource cards */
+.outreach-page .resource-container {
+    width: min(100% - 40px, 1040px);
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Equal-width resource cards */
+.outreach-page .resource-box {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+}
+
+/* Align Back to Main with the content */
+.outreach-page .back-button-container {
+    width: min(100% - 40px, 1000px);
+    margin: 20px auto 40px;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 768px) {
+    .outreach-page .section2 {
+        width: calc(100% - 32px);
+        margin: 20px auto;
+    }
+
+    .outreach-page .resource-container {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .outreach-page .resource-box {
+        width: 100%;
+        flex: none;
+    }
+
+    .outreach-page .back-button-container {
+        width: calc(100% - 32px);
+    }
+}
