@@ -17,46 +17,12 @@
     <title>Teaching | Elizabeth Glynne Boenigk</title>
     <link rel="stylesheet" href="style.css">
     <!-- Tile styles are scoped to this page and can be moved into style.css later. -->
-    <style>
-      .teaching-page, .teaching-page * { box-sizing: border-box; }
-      .teaching-page .teaching-dashboard { width: min(100% - 40px, 1040px); margin: 34px auto 44px; }
-      .teaching-page .teaching-dashboard h1 { margin: 0 0 10px; font-size: clamp(1.75rem, 3vw, 2.35rem); color: #2c3e50; }
-      .teaching-page .teaching-intro { max-width: 850px; font-size: 1.08rem; line-height: 1.65; margin: 0 0 26px; }
-      .teaching-page .teaching-dashboard h2 { color: #2c3e50; font-size: 1.25rem; margin: 0 0 14px; }
-      .teaching-page .tile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 0 0 26px; }
-      .teaching-page .tile { min-width: 0; background: #fff; border: 1px solid #dedede; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,.08); padding: 23px; }
-      .teaching-page .tile h3 { margin: 0 0 10px; font-size: 1.15rem; color: #2c3e50; }
-      .teaching-page .tile p { margin: 0; line-height: 1.65; color: #4d4d4d; }
-      .teaching-page .resource-tile { border-top: 4px solid #55713D; }
-      .teaching-page .resource-tile:nth-child(2) { border-top-color: #B76B32; }
-      .teaching-page .resource-tile:nth-child(3) { border-top-color: #19394F; }
-      .teaching-page .info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-      .teaching-page .info-tile { padding: 24px; }
-      .teaching-page .info-tile.wide { grid-column: 1 / -1; }
-      .teaching-page .info-tile p + p { margin-top: 12px; }
-      .teaching-page .info-tile h4 { margin: 17px 0 5px; color: #2c3e50; }
-      .teaching-page .info-tile h4:first-of-type { margin-top: 4px; }
-      .teaching-page details { margin-top: 15px; }
-      .teaching-page summary { cursor: pointer; font-weight: bold; color: #2c3e50; padding: 7px 0; }
-      .teaching-page summary:focus-visible, .teaching-page a:focus-visible { outline: 3px solid #B18A27; outline-offset: 3px; }
-      .teaching-page .back-button-container { margin: 28px 0 0; }
-      @media (max-width: 800px) {
-        .teaching-page .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .teaching-page .info-grid { grid-template-columns: 1fr; }
-        .teaching-page .info-tile.wide { grid-column: auto; }
-      }
-      @media (max-width: 560px) {
-        .teaching-page .teaching-dashboard { width: calc(100% - 32px); margin-top: 22px; }
-        .teaching-page .tile-grid { grid-template-columns: 1fr; }
-        .teaching-page .tile { padding: 19px; }
-      }
-    </style>
 </head>
 <body class="teaching-page">
   <main class="teaching-dashboard">
     <header>
       <h1>Teaching &amp; Learning</h1>
-      <p class="teaching-intro">Helping students investigate how life works, persists, and changes through scientific reasoning, evidence, and exploration.</p>
+      <p class="teaching-intro">Helping students ask better questions, evaluate evidence, and explore connections in the living world.</p>
     </header>
 
     <section aria-label="Educational resources and projects">
@@ -80,11 +46,7 @@
       <section class="tile info-tile" aria-labelledby="philosophy-title">
         <h2 id="philosophy-title">Teaching Philosophy</h2>
         <p>I approach biology education as an opportunity to help students understand the living world as a collection of interconnected, dynamic systems. Rather than emphasizing memorization of isolated facts, I encourage students to investigate how biological systems work, persist, and change across time and levels of organization.</p>
-        <details>
-			<a href="TeachingPhilosophy.html">
-				Read my full teaching philosophy &rarr;
-					</a>        
-				</details>
+        <p class="detail-link"><a href="TeachingPhilosophy.html">Read my full teaching philosophy &rarr;</a></p>
       </section>
 
       <section class="tile info-tile" aria-labelledby="courses-title">
