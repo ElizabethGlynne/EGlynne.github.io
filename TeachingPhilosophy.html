@@ -13,6 +13,8 @@
     .philosophy-page .philosophy-wrap { width: min(100% - 36px, 1000px); margin: 30px auto 56px; }
     .philosophy-page .philosophy-intro { max-width: 820px; margin: 0 auto 24px; }
     .philosophy-page h1 { font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.2; margin-bottom: 12px; color: #2c3e50; }
+    .philosophy-page .eyebrow { color: #55713D; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+    .philosophy-page .personal { border-top: 4px solid #264C43; }
     .philosophy-page .lead { font-size: 1.1rem; line-height: 1.65; }
     .philosophy-page .philosophy-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
     .philosophy-page .philosophy-tile { min-width: 0; background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 22px 25px; box-shadow: 0 2px 5px rgba(0,0,0,.08); }
@@ -24,6 +26,8 @@
     .philosophy-page .practice { border-top: 4px solid #B76B32; }
     .philosophy-page .reflection { border-top: 4px solid #19394F; }
     .philosophy-page .references { border-top: 4px solid #755C89; }
+    .philosophy-page .references summary { cursor: pointer; font-size: 1.15rem; color: #2c3e50; }
+    .philosophy-page .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     .philosophy-page .references ol { padding-left: 1.5rem; }
     .philosophy-page .references li { margin: 0 0 14px; overflow-wrap: anywhere; }
     .philosophy-page a { overflow-wrap: anywhere; }
@@ -34,44 +38,50 @@
 <body class="philosophy-page">
 <main class="philosophy-wrap">
   <header class="philosophy-intro">
+    <p class="eyebrow">Teaching • Learning • Scientific Inquiry</p>
     <h1>My Teaching Philosophy</h1>
-    <p class="lead">I teach biology to help students understand the living world as a network of interconnected, dynamic systems—and to develop the habits of mind needed to investigate it.</p>
-    <p>My guiding question, especially in introductory biology, is: <strong>How does life work, persist, and change?</strong> It invites students to connect biological mechanisms with continuity, diversity, and change across scales.</p>
+    <p class="lead">I want students to discover that science is something they can participate in—not simply a collection of answers they are expected to remember.</p>
+    <p>What draws me to biology is that every discovery reveals new connections and often raises questions we had not thought to ask. I want students to experience that curiosity, to see relationships they had not noticed before, and to develop the confidence to investigate what they do not yet understand.</p>
   </header>
 
   <div class="philosophy-grid">
-    <section class="philosophy-tile principles">
-      <h2>Concepts Before Isolated Facts</h2>
-      <p>I want students to move beyond recognizing terms toward explaining relationships, predicting outcomes, and applying ideas to unfamiliar situations. Evolutionary thinking offers a powerful organizing perspective, but the central questions and explanatory models should fit the course being taught.</p>
-      <p>Research on learning emphasizes building connected knowledge and supporting transfer across contexts (National Academies, 2018).</p>
+    <section class="philosophy-tile wide personal">
+      <h2>Why I Teach</h2>
+      <p>I teach because I want students to look at the world differently. I want them to recognize patterns, ask why things happen, and understand that scientific explanations are built from evidence—and can change when new evidence emerges.</p>
+      <p>My aim is not for every student to become a biologist. It is for students to leave more capable of asking questions, evaluating claims, making connections, and approaching unfamiliar problems with curiosity.</p>
     </section>
     <section class="philosophy-tile principles">
-      <h2>Learning Through Evidence and Participation</h2>
-      <p>Scientific understanding develops through questions, models, observations, data, and revision. I use laboratory investigations, guided practice, discussion, authentic datasets, and computational exploration where they advance the learning objectives.</p>
-      <p>Meta-analyses in undergraduate STEM support well-designed active learning, while also showing that implementation matters (Freeman et al., 2014; Theobald et al., 2020).</p>
+      <h2>Curiosity</h2>
+      <p>Questions are the starting point of understanding. I invite students to make predictions, test ideas, and remain open to being surprised by what they discover.</p>
     </section>
-    <section class="philosophy-tile practice">
-      <h2>Inclusive Access, Meaningful Expectations</h2>
-      <p>Students arrive with different experiences, strengths, and ways of engaging with science. I aim to offer clear objectives, multiple opportunities for practice and feedback, and varied ways to participate without abandoning the scientific understanding each course requires.</p>
-      <p>Intentional classroom structure can broaden participation and foster equity (Tanner, 2013).</p>
+    <section class="philosophy-tile principles">
+      <h2>Connection</h2>
+      <p>Biology is not a collection of unrelated vocabulary. I help students connect structures, processes, organisms, environments, and evolutionary change, and transfer those connections to new problems.</p>
+      <p>Research on learning emphasizes connected knowledge and transfer (National Academies, 2018).</p>
     </section>
-    <section class="philosophy-tile practice">
-      <h2>Models, Technology, and Scientific Computing</h2>
-      <p>Visual models, simulations, R-based analyses, and digital anatomy can make complex systems more visible and investigable. I use these as tools for reasoning—not as substitutes for understanding biological assumptions, limitations, or evidence.</p>
-      <p>Students should be able to explain what a model represents, what it leaves out, and what conclusions its results support.</p>
+    <section class="philosophy-tile principles wide">
+      <h2>Discovery Through Evidence</h2>
+      <p>Students should have opportunities to participate in scientific reasoning: observing, analyzing data, building and critiquing models, discussing explanations, and revising ideas. Well-designed active learning can support performance and narrow achievement gaps, though its effectiveness depends on how it is implemented (Freeman et al., 2014; Theobald et al., 2020).</p>
+    </section>
+    <section class="philosophy-tile practice wide">
+      <h2>What This Looks Like in My Classroom</h2>
+      <p>I use laboratory investigations, guided practice, comparative examples, authentic datasets, visual explanations, and computational tools when they help students meet a learning goal. I want students to explain not only what a result shows, but how they know—and what remains uncertain.</p>
+      <p>I also recognize that students bring different experiences, strengths, and needs. I work to make expectations clear, provide meaningful practice and feedback, and create multiple ways to participate without lowering the scientific goals of the course. Deliberate classroom structures can help broaden participation (Tanner, 2013).</p>
+      <p>Technology is a means, not an end: an R simulation or a digital anatomical model is useful when students can examine its assumptions, limitations, and evidence.</p>
     </section>
     <section class="philosophy-tile reflection wide">
-      <h2>One Philosophy, Different Courses</h2>
-      <p>My philosophy is a set of commitments, not a fixed teaching recipe. A face-to-face laboratory, an asynchronous biology course, and a scientific computing course need not use identical activities or assessments. Their learning outcomes, students, delivery constraints, and disciplinary practices should determine the methods.</p>
-      <p>For example, introductory biology may emphasize explaining mechanisms through experiments and comparative examples; an online course may use structured case analysis and feedback; scientific computing may center reproducible notebooks and model critique. What remains consistent is the emphasis on conceptual coherence, evidence, transparent expectations, and opportunities to revise understanding.</p>
+      <h2>Different Courses, Shared Commitments</h2>
+      <p>My teaching philosophy is not a fixed recipe. A face-to-face biology laboratory, an asynchronous course, and a scientific computing course call for different activities, supports, and assessments. I choose methods based on the students, disciplinary questions, and what they should be able to explain or do.</p>
+      <p>Across those settings, I return to the same commitments: curiosity, conceptual understanding, evidence, accessible participation, and meaningful expectations. Each course can have its own organizing questions; the question <em>“How does life work, persist, and change?”</em> belongs to my introductory biology course rather than serving as a universal teaching slogan.</p>
     </section>
     <section class="philosophy-tile reflection wide">
-      <h2>Reflective, Evidence-Informed Course Design</h2>
-      <p>I treat teaching as an iterative practice. I begin with what students should be able to explain or do, align practice and assessment with those goals, examine where students struggle, and revise materials accordingly. Educational research informs my decisions, but I also evaluate whether an approach is appropriate for a particular course and group of learners.</p>
-      <p>My aim is for students to leave with more than course-specific facts: the ability to ask better questions, evaluate evidence, make connections, and approach unfamiliar biological problems with curiosity.</p>
+      <h2>Learning Alongside My Students</h2>
+      <p>I see teaching as an iterative practice. I start with learning objectives, align practice and assessment, look carefully at where students struggle, and revise my approach. Educational research informs those choices, but the needs of a particular course and its learners matter too.</p>
     </section>
     <section class="philosophy-tile references wide">
-      <h2>Research Foundations</h2>
+      <details>
+        <summary><strong>Research That Informs My Teaching</strong> — View references</summary>
+      <h2 class="sr-only">Research Foundations</h2>
       <p>These sources inform aspects of my teaching approach. They do not prescribe a single method for every course or learner.</p>
       <ol>
         <li>Freeman, S., et al. (2014). Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences, 111</em>(23), 8410–8415. <a href="https://doi.org/10.1073/pnas.1319030111" target="_blank" rel="noopener noreferrer">https://doi.org/10.1073/pnas.1319030111</a></li>
@@ -79,6 +89,7 @@
         <li>Tanner, K. D. (2013). Structure matters: Twenty-one teaching strategies to promote student engagement and cultivate classroom equity. <em>CBE—Life Sciences Education, 12</em>(3), 322–331. <a href="https://doi.org/10.1187/cbe.13-06-0115" target="_blank" rel="noopener noreferrer">https://doi.org/10.1187/cbe.13-06-0115</a></li>
         <li>National Academies of Sciences, Engineering, and Medicine. (2018). <em>How People Learn II: Learners, Contexts, and Cultures.</em> National Academies Press. <a href="https://doi.org/10.17226/24783" target="_blank" rel="noopener noreferrer">https://doi.org/10.17226/24783</a></li>
       </ol>
+      </details>
     </section>
   </div>
   <div class="back-button-container"><a class="back-button" href="TeachingPage.html">Back to Teaching</a></div>
