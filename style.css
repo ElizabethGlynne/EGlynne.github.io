@@ -266,3 +266,62 @@ body {
         margin-bottom: 20px;
     }
 }
+
+
+/* =========================================
+   Teaching Page: Responsive Content Layout
+   ========================================= */
+
+.teaching-page,
+.teaching-page *,
+.teaching-page *::before,
+.teaching-page *::after {
+    box-sizing: border-box;
+}
+
+/* Teaching content container */
+.teaching-page .section2 {
+    width: min(100% - 40px, 1000px);
+    margin: 30px auto;
+}
+
+/* Comfortable reading width */
+.teaching-page .sectionContent,
+.teaching-page .section2Content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Teaching resource cards */
+.teaching-page .resource-container {
+    max-width: 1040px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.teaching-page .resource-box {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 768px) {
+    .teaching-page .section2 {
+        width: calc(100% - 32px);
+        margin: 20px auto;
+    }
+
+    .teaching-page .resource-container {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .teaching-page .resource-box {
+        width: 100%;
+        flex: none;
+    }
+}
